@@ -2,7 +2,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: SF-Pro, sans-serif;
 }
 
 /* Font Files */
@@ -10,17 +9,17 @@
 		/* Avenir Next LT Pro Font */
 
 		@font-face { 
-			font-family: Avenir, sans-serif; 
+			font-family: Avenir; 
 			src: url('Assets/Fonts/AvenirNextLTPro-Regular.otf'); 
 		}
 
 		@font-face { 
-			font-family: Avenir-semibold, sans-serif; 
+			font-family: Avenir-semibold; 
 			src: url('Assets/Fonts/AvenirNextLTPro-Demi.otf'); 
 		}
 
 		@font-face { 
-			font-family: Avenir-bold, sans-serif; 
+			font-family: Avenir-bold; 
 			src: url('Assets/Fonts/AvenirNextLTPro-Bold.otf'); 
 		}
 
@@ -30,22 +29,22 @@
 		/* SF Pro Text Font */
 
 		@font-face { 
-			font-family: SF-Pro, sans-serif; 
+			font-family: SF-Pro; 
 			src: url('Assets/Fonts/SFProText-Regular.ttf'); 
 		}
 
 		@font-face { 
-			font-family: SF-Pro-italic, sans-serif; 
+			font-family: SF-Pro-italic; 
 			src: url('Assets/Fonts/SFProText-RegularItalic.ttf'); 
 		}
 
 		@font-face { 
-			font-family: SF-Pro-semibold, sans-serif; 
+			font-family: SF-Pro-semibold; 
 			src: url('Assets/Fonts/SFProText-Semibold.ttf'); 
 		}
 
 		@font-face { 
-			font-family: SF-Pro-bold, sans-serif; 
+			font-family: SF-Pro-bold; 
 			src: url('Assets/Fonts/SFProText-Bold.ttf'); 
 		}
 
@@ -53,7 +52,9 @@
 
 /* End - Font Files */
 
-
+body {
+	font-family: SF-Pro, sans-serif;
+}
 
 /* Style Guide CSS - Desktop */
 
