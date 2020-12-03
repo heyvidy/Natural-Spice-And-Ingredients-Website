@@ -26,34 +26,18 @@
 		/* End - Avenir Next LT Pro Font */
 
 
-		/* SF Pro Text Font */
-
-		@font-face { 
-			font-family: SF-Pro; 
-			src: url('Assets/Fonts/SFProText-Regular.ttf'); 
-		}
-
-		@font-face { 
-			font-family: SF-Pro-italic; 
-			src: url('Assets/Fonts/SFProText-RegularItalic.ttf'); 
-		}
-
-		@font-face { 
-			font-family: SF-Pro-semibold; 
-			src: url('Assets/Fonts/SFProText-Semibold.ttf'); 
-		}
-
-		@font-face { 
-			font-family: SF-Pro-bold; 
-			src: url('Assets/Fonts/SFProText-Bold.ttf'); 
-		}
-
-		/* End - SF Pro Text Font */
-
 /* End - Font Files */
 
+html {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+
 body {
-	font-family: SF-Pro, sans-serif;
+	font-family: Avenir, sans-serif;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 /* Style Guide CSS - Desktop */
@@ -163,8 +147,6 @@ body {
 			font-size: 32px;
 			line-height: 132%;
 			color: var(--black-secondary);
-			letter-spacing: 0.8px;
-			text-transform: uppercase;
 		}
 
 		.h3 {
@@ -182,42 +164,42 @@ body {
 		}
 
 		.h5 {
-			font-family: SF-Pro-semibold;
+			font-family: Avenir-semibold;
 			font-size: 22px;
 			line-height: 150%;
 			color: var(--black-secondary);
 		}
 
 		.h6 {
-			font-family: SF-Pro-semibold;
+			font-family: Avenir-semibold;
 			font-size: 18px;
 			line-height: 150%;
 			color: var(--black-secondary);
 		}
 
 		.body-text {
-			font-family: SF-Pro;
+			font-family: Avenir;
 			font-size: 16px;
 			line-height: 150%;
 			color: var(--black-secondary);
 		}
 
 		.body-text-2 {
-			font-family: SF-Pro;
+			font-family: Avenir;
 			font-size: 14px;
 			line-height: 150%;
 			color: var(--black-secondary);
 		}
 
 		.label-text {
-			font-family: SF-Pro;
+			font-family: Avenir;
 			font-size: 10px;
 			line-height: 150%;
 			color: var(--black-secondary);
 		}
 
 		.block-quote {
-			font-family: SF-Pro-italic;
+			font-family: Avenir;
 			font-size: 18px;
 			line-height: 150%;
 			color: var(--black-secondary);
@@ -231,38 +213,52 @@ body {
 /* Components - Desktop */
 
 	/* Navbar */
+
+		.nav-bg {
+			background: linear-gradient(93.15deg, #1B1C24 2.57%, #1B1C24 26.82%, #1F2028 37.01%, #23222A 45.56%, #2D2932 58%, #2F323B 74.09%, #2B333C 97.36%);
+		}
 	
 		.nav-logo {
 			font-family: Avenir-bold;
-			font-size: 16px;
-			line-height: 19px;
+			font-size: 20px;
+			line-height: 20px;
 			text-transform: uppercase;
-			color: var(--black-secondary);
+			color: var(--white-primary) !important;
+		}
+
+		.navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover {
+			color: var(--turmeric-primary) !important;
 		}
 
 		.nav-link-element {
-			font-family: SF-Pro-semibold;
-			font-size: 12px;
+			font-family: Avenir-semibold;
+			font-size: 14px;
 			line-height: 14px;
-			text-transform: uppercase;
 			text-align: center;
-			letter-spacing: .6px;
-			color: var(--black-primary);
+			color: var(--white-primary) !important;
 			padding: 20px 32px !important;
+		}
+
+		.nav-link-element:hover {
+			color: var(--turmeric-primary) !important;
 		}
 
 		.nav-btn {
 			color: var(--white-primary) !important;
 			padding: 16px 24px !important;	
 			margin-left: 20px;
-			background: var(--turmeric-primary);
+			background: linear-gradient(90deg, #FFB944 0%, #FF9E44 100%);
 			border: 1px solid var(--turmeric-primary);
 		}
 
 		.nav-btn:hover {
 			color: var(--turmeric-primary) !important;
-			background: var(--white-primary);
+			background: transparent;
 			border: 1px solid var(--turmeric-primary);
+		}
+
+		.navbar-nav li a:hover, .navbar-nav > .active > a {
+		  color: var(--turmeric-primary) !important;
 		}
 
 		/* End - Navbar */
@@ -270,8 +266,7 @@ body {
 		/* Footer */
 
 		footer {
-			background: var(--black-primary);
-			z-index: 10;
+			background: var(--white-primary);
     		position: relative;
 		}
 
@@ -280,34 +275,34 @@ body {
 			font-size: 14px;
 			line-height: 17px;
 			text-transform: uppercase;
-			color: var(--white-secondary);
+			color: var(--black-primary);
 			letter-spacing: 1px;
 		}
 
 		.footer-logo:hover {
 			text-decoration: none;
-			color: var(--white-primary);
+			color: var(--turmeric-primary);
 		}
 
 		.footer-desc {
-			color: var(--white-tertiary);
+			color: var(--black-tertiary);
 		}
 
 		.footer-title {
-			font-family: SF-Pro-semibold;
+			font-family: Avenir-semibold;
 			line-height: 17px;
 			text-transform: uppercase;
 			padding-bottom: 14px;
-			color: var(--white-border);
+			color: var(--black-primary);
 		}
 
 		.footer-info {
-			color: var(--white-tertiary);
+			color: var(--black-tertiary);
 			margin-bottom: 12px;
 		}
 
 		.footer-info:hover {
-			color: var(--turmeric-primary);
+			color: var(--turmeric-primary) !important;
 			text-decoration: none;
 		}
 
@@ -329,70 +324,83 @@ body {
 
 			.hero {
 				width: 100vw;
-				height: 85vh;
+				height: 90vh;
 				max-width: 100%;
 				max-height: 100%;
-				background: var(--turmeric-bg);
-				z-index: 10;
-  			  	position: relative;
-  			  	overflow: hidden;
+				position: relative;
+				background: url("Assets/Images/Hero BG.png");
+				background-position: -120px -360px;
 			}
 
-			.right-overlay {
+			.overlay {
 				position: relative;
-				left: 60%;
-				width: 40%;
+				width: 100%;
 				height: 100%;
-				background: var(--turmeric-light);
-				border-radius: 30px 0px 0px 30px;
+				background: linear-gradient(93.23deg, #1B1C24 17.91%, rgba(27, 28, 36, 0.93) 37.78%, rgba(27, 28, 36, 0) 80.75%);
 			}
 
 			.hero-container {
-				margin-top: -85vh;
+				margin-top: -90vh;
 			}
 
 			.hero-content {
-				height: 85vh;
+				height: 90vh;
+			}
+
+			.hero-gold-box {
+				width: 640px;
+				height: 460px;
+				border: 10px solid transparent;
+			    border-image: linear-gradient(270deg, rgba(255,185,68,0.4) 0%, rgba(255, 255, 255, 0) 100%);
+			    border-image-slice: 1;
+			    padding-right: 40px;
 			}
 
 			.hero-head {
-				font-size: 42px;
-				line-height: 140%;
-				letter-spacing: 0.5px;
-				text-transform: uppercase;
-			}
-
-			.certified-content {
-				margin-top: 8px;
-			}
-
-			.fssai-logo {
-				width: 28%;
-				margin-right: 10px;
-			}
-
-			.hero-h5 {
-				margin-top: 14px;
-				font-family: Avenir-semibold; 
+				font-size: 56px;
+				line-height: 114%;
+				font-family: Avenir-bold;
+				color: var(--white-primary);
+				margin-top: 30px;
 			}
 
 			.cta-btn {
 				margin-top: 40px;
-				background: var(--turmeric-primary);
+				background: linear-gradient(90deg, #FFB944 0%, #FF9E44 100%);
 				color: var(--white-primary);
 				padding: 12px 40px;
 				border: 1px solid var(--turmeric-primary);
+				font-family: Avenir-bold;
+				font-size: 18px;
+				line-height: 150%;
+				text-transform: uppercase;
 			}
 
 			.cta-btn:hover {
-				background: var(--white-primary);
+				background: transparent;
 				color: var(--turmeric-primary);
 				border: 1px solid var(--turmeric-primary);
 			}
 
-			.hero-img {
-				width: 130%;
-				margin-left: -80px;
+			.fssai-container {
+				position: relative;
+			    width: 110px;
+			    height: 110px;
+			    border-radius: 50%;
+			    background: var(--white-primary);
+			    margin-top: -70px;
+			    left: 580px;
+			    flex-direction: column;
+			}
+
+			.fssai-logo {
+				width: 60px;
+				margin-top: 10px;
+			}
+
+			.fssai-certified {
+				font-family: Avenir-semibold;
+				margin-top: 5px;
 			}
 
 			/* End - Hero Section */	
@@ -470,7 +478,7 @@ body {
 			/* Value Props Section */
 
 			.value-props-section {
-				background: var(--turmeric-bg);
+				background: var(--white-primary);
 				padding-top: 120px;
 				z-index: 10;
    		 		position: relative;
@@ -478,8 +486,17 @@ body {
 
 			.value-prop-card {
 				border: none;
-				background: transparent;
-				width: 280px;
+				background: var(--turmeric-bg);
+				padding: 40px;
+				width: 400px;
+				margin: 20px 0;
+				box-shadow: -2px 0px 0px #FFB944;
+				border-radius: 10px;
+			}
+
+			.value-prop-col2 {
+				position: relative;
+    			top: 120px;
 			}
 
 			.value-prop-card-image {
@@ -493,23 +510,19 @@ body {
 			}
 
 			.value-prop-card-title {
-				font-size: 21px;
+				font-size: 24px;
 				line-height: 31px;
-				font-family: Avenir-semibold;
+				font-family: Avenir-bold;
 				margin-bottom: 0;
+				color: var(--black-secondary);
 			}
 
 			.value-prop-card-text {
+				font-family: Avenir;
+				font-size: 14px;
+				line-height: 24px;
 				margin-top: 8px;
-				color: var(--black-border);
-			}
-
-			.value-prop-card-margin1 {
-				margin-left: 40px;
-			}
-
-			.value-prop-card-margin2 {
-				margin-right: 60px;
+				color: var(--black-primary);
 			}
 
 			/* End - Value Props Section */
@@ -518,44 +531,48 @@ body {
 			/* Manufactuing Services Section */
 
 			.services-section {
-				background: var(--white-primary);
-				padding-bottom: 200px;
+				background: #1B1C24;
+				/*padding-bottom: 200px;*/
 				z-index: 10;
     			position: relative;
 			}
 
-			.service-cards-row1 {
-				margin-top: 120px;
+			.services-section-title {
+				color: var(--white-primary);
+				margin-left: 15px;
+			}
+
+			.border-line {
+				width: 150px;
+				height: 5px;
+				background: var(--turmeric-primary);
+				border-radius: 10px;
+				margin-top: 20px;
+				margin-left: 15px;
 			}
 
 			.service-cards-row {
-				margin-top: 140px;
+				
 			}
 
 			.service-card {
 				border: none;
 				background: linear-gradient(90deg, #FCFCFC 100%, #FCFCFC 0%);
-				width: 90%;
+				width: 510px;
+				height: 320px;
 				padding: 20px;
 				padding-right: 30px;
-				z-index: 10;
 				position: relative;
-				margin-top: -300px;
 				border-radius: 10px;
+				margin: 25px 0;
 			}
 
-			.service-card-shadow {
-				position: relative;
-				width: 280px;
-				height: 250px;
-				background: #BEC2CC;
-				opacity: 0.2;
-				filter: blur(140px);
-				border-radius: 122px;
-				transform: rotate(-30.23deg);
-				z-index: 5;
-				margin-left: -100px;
-				margin-top: -20px;
+			.yellow-bg{
+				background: #FFF1BC;
+			}
+
+			.red-bg{
+				background: #FFDAD8;
 			}
 
 			.service-card-image {
@@ -586,30 +603,63 @@ body {
 
 			/* About Hero */
 
-			.about-hero {
-				width: 100vw;
-				height: 35vh;
-				max-width: 100%;
-				max-height: 100%;
-				background: url("Assets/Images/about hero.jpg");
-				background-size: cover;
-				background-attachment: fixed;
-				background-repeat: no-repeat;
-				background-position: center 135%;
+			.about-nav-bg {
+				background: #1B1C24;
 			}
 
-			.about-hero-overlay {
+			.about-hero {
+				width: 100vw;
+				height: 80vh;
+				max-width: 100%;
+				max-height: 100%;
+				background: #1B1C24;
+			}
+
+			.about-hero-content {
 				width: 100%;
 				height: 100%;
-				background: rgba(53,53,53,.75);
 			}
 
 			.about-hero-head {
-				height: 100%;
+				font-family: Avenir-bold;
+				font-size: 40px;
+				line-height: 120%;
+				color: var(--white-primary);
 			}
 
-			.about-hero-head h2 {
+			.about-head-underline {
+				margin-bottom: 32px;
+				width: 140px;
+				height: 16px;
+				background: var(--turmeric-primary);
+				opacity: 0.55;
+				margin-top: -25px;
+			}
+
+			.about-hero-subhead  {
+				font-family: Avenir-bold;
+				font-size: 18px;
+				line-height: 27px;
+				letter-spacing: 0.06em;
+				text-transform: uppercase;
 				color: var(--white-primary);
+				margin-bottom: 16px;
+			}
+
+			.about-company-desc {
+				color: var(--white-primary);
+			}
+
+			.about-hero-img {
+				width: 100%;
+			}
+
+			.border-line1 {
+				width: 150px;
+				height: 5px;
+				background: var(--turmeric-primary);
+				border-radius: 10px;
+				margin-top: 20px;
 			}
 
 			/* End - About Hero */
@@ -617,31 +667,20 @@ body {
 
 			/* About Company Section */
 
-			.about-company-section {
+			.contact-section {
 				background: var(--white-primary);
 			}
 
 			.about-company-img {
-				width: 130%;
-			    margin-top: -160px; 
-			    margin-bottom: -56px;
-			    margin-left: -210px;
+				width: 95%;
+			    margin-bottom: 25px;
 			}
 
 			.about-company-title {
-				line-height: 150%;
-				text-transform: none;
-				letter-spacing: 0;
+				font-family: Avenir-bold;
+				font-size: 32px;
+				line-height: 125%;
 				color: var(--black-primary);
-				margin-bottom: 16px;
-			}
-
-			.about-company-desc {
-				color: var(--black-border);
-			}
-
-			.contact-section {
-				background: var(--turmeric-bg);
 			}
 
 			.about-company-subtitle {
@@ -649,21 +688,33 @@ body {
 				letter-spacing: 0.6px;
 				text-transform: uppercase;
 				margin-bottom: 0;
+				font-family: Avenir-bold;
 			}
 
 			.about-company-detail {
 				margin-top: 4px !important;
 				font-weight: 500;
 				line-height: 200%;
-				color: var(--black-tertiary);
+				color: var(--black-secondary);
 			}
 
 			.about-company-phone {
 				margin-top: 24px;
 			}
 
-			/* End - About Company Section */
+			.about-cta-section {
+				background: #1B1C24;
+			}
 
+			.about-cta-head {
+				font-family: Avenir-semibold;
+				font-size: 24px;
+				line-height: 133%;
+				text-align: center;
+				color: var(--white-primary);
+			}
+
+			/* End - About Company Section */
 
 			/* Gallery Section */
 
@@ -672,23 +723,25 @@ body {
 			}
 
 			.gallery-title {
-				line-height: 140%;
-				letter-spacing: 1px;
-				text-transform: uppercase;
+				font-family: Avenir-bold;
+				font-size: 32px;
+				line-height: 125%;
+				color: var(--black-primary);
 			}
 
 			.gallery-desc {
-				color: var(--black-tertiary);
+				color: var(--white-secondary);
 				width: 81%;
 			}
 
 			.gallery-contact-link {
 				margin-top: 8px;
-				font-family: SF-Pro-semibold;
+				font-family: Avenir-semibold;
+				color: var(--turmeric-primary);
 			}
 
 			.gallery-contact-link:hover {
-				color: var(--turmeric-primary);
+				color: var(--white-primary);
 			}
 
 			.grid-container {
@@ -772,6 +825,8 @@ body {
 
 			/*  End - Gallery Section*/
 
+
+
 		/* End - About Page */
 
 		.padder {
@@ -802,15 +857,6 @@ body {
 
 	@media screen and (max-width: 1199px) {
 
-		.hero-img {
-			width: 120%;
-			margin-left: -60px;
-		}
-
-		.about-company-img {
-		    margin-left: -170px;
-		}
-
 		.grid-item {
 		    width: 230px;
 		    height: 230px;
@@ -837,13 +883,13 @@ body {
 		}
 		
 		.hero-head {
-			font-size: 30px;
-			line-height: 140%;
+			font-size: 50px;
+			line-height: 130%;
 		}
 
-		.hero-img {
-			width: 120%;
-			margin-left: -60px;
+		.hero-gold-box {
+		    border-image: linear-gradient(270deg, rgba(255,185,68,0.6) 0%, rgba(255, 255, 255, 0) 100%);
+		    border-image-slice: 1;
 		}
 
 		.h2 {
@@ -870,14 +916,17 @@ body {
 		    margin-bottom: 40px;
 		}
 
-		.service-card-shadow {
-		    width: 60px;
+		.about-hero {
+			height: 120vh;
 		}
 
-		.about-company-img {
-			margin-left: -130px;
-		    margin-top: -140px;
-		    margin-bottom: -25px;
+		.about-hero-row {
+			flex-direction: column-reverse;
+		}
+
+		.about-hero-img {
+			width: 60%;
+			margin-bottom: 60px;
 		}
 
 		.grid-item {
@@ -899,7 +948,7 @@ body {
 		}
 
 		.hero-container {
-			margin-top: -100vh;
+			margin-top: -80vh;
 		}
 
 		.hero-content {
@@ -910,9 +959,18 @@ body {
 			height: 30vh;
 		}
 
-		.hero-img {
-			width: 115%;
-			margin-left: -80px;
+		.hero-head {
+			font-size: 40px;
+			line-height: 130%;
+		}
+
+		.hero-gold-box {
+		    width: 400px;
+		    height: 400px;
+		}
+
+		.fssai-container {
+		    left: 340px;
 		}
 
 		.cta-btn {
@@ -936,6 +994,10 @@ body {
 		    margin-right: 0px;
 		}
 
+		.value-prop-col2 {
+		    top: 0px;
+		}
+
 		.mobile-shadow {
 			margin-top: 0px;
 		}
@@ -946,12 +1008,6 @@ body {
 
 		.footer-title {
 			padding-bottom: 6px;
-		}
-
-		.about-company-img {
-			margin-left: -110px;
-		    margin-top: -120px;
-		    margin-bottom: -30px;
 		}
 
 		.about-company-email {
@@ -994,18 +1050,31 @@ body {
 			font-size: 14px;
 		}
 
-		.right-overlay {
-			left: 50%;
-			width: 50%;
+		.hero {
+		    background-position: -1240px -400px;
 		}
 
 		.hero-container {
 			padding: 0 20px;
 		}
 
-		.hero-img {
-			width: 110%;
-			margin-left: -50px;
+		.hero-head {
+			font-size: 32px;
+			line-height: 130%;
+		}
+
+		.hero-gold-box {
+		    width: 300px;
+		    height: 400px;
+		}
+
+		.fssai-container {
+		    left: 240px;
+		}
+
+		.cta-btn {
+		    font-size: 14px;
+		    letter-spacing: .6px;
 		}
 
 		.container {
@@ -1016,11 +1085,21 @@ body {
 			margin-top: 48px;
 		}
 
+		.service-card {
+		    width: 330px;
+		    height: 380px;
+		}
+
+		.about-hero {
+			height: 150vh;
+		}
+
+		.about-hero-img {
+			width: 80%;
+		}
+
 		.about-company-img {
-			width: 120%;
-		    margin-left: -55px;
-		    margin-top: -100px;
-		    margin-bottom: 0;
+			width: 90%;
 		}
 
 		.grid-item {
@@ -1075,6 +1154,11 @@ body {
 		.item10 {
 		    grid-column: 1;
 			grid-row: 12;
+		}
+
+		.about-cta-head {
+			font-size: 20px;
+			line-height: 150%;
 		}
 	}
 
