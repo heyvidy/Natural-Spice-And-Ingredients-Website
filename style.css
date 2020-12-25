@@ -364,6 +364,10 @@ body {
 				margin-top: 30px;
 			}
 
+			.hero-subtext {
+			 	color: var(--white-primary);	
+			}
+
 			.cta-btn {
 				margin-top: 40px;
 				background: linear-gradient(90deg, #FFB944 0%, #FF9E44 100%);
