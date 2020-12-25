@@ -365,7 +365,8 @@ body {
 			}
 
 			.hero-subtext {
-			 	color: var(--white-primary);	
+			 	color: var(--white-primary);
+			    	font-family: 'Avenir';
 			}
 
 			.cta-btn {
